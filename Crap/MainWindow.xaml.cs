@@ -90,10 +90,45 @@ namespace Crap
 
         private void CheckFirstTurn()
         {
+            if ((CurrentDiceSum == 7) || (CurrentDiceSum == 11))
+            {
+                DisplayPoints();
+                label.Content = "You win!";
+            }
+            if (CurrentDiceSum == 2)
+            {
+                label.Content = "You got snake eyes";
+            }
+            if ((CurrentDiceSum == 3) || (CurrentDiceSum == 12))
+            {
+                label.Content = "You lose!";
+            }
         }
 
         private void GameLoop()
         {
+            Turn++;
+            DisplayTurns();
+            if (bIsFirstTurn)
+            {
+                CheckFirstTurn();
+                bIsFirstTurn = false;
+                PreviousDiceSum = CurrentDiceSum;
+            }
+            else
+            {
+                if (PreviousDiceSum == CurrentDiceSum)
+                {
+                    DisplayPoints();
+                    label.Content = "You win!";
+                }
+                if (CurrentDiceSum == 7)
+                {
+                    label.Content = "You lose!";
+                }
+            }
+            DisplayPoints();
+            PreviousDiceSum = CurrentDiceSum;
         }
 
         private void btnRoll_Click(object sender, RoutedEventArgs e)
