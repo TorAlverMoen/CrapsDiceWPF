@@ -23,6 +23,6 @@
             <Label x:Name="label" Content="[info]" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Top" Width="600" FontFamily="Roboto" HorizontalContentAlignment="Left" Foreground="LightGray"/>
         </GroupBox>
         <Label x:Name="labelAbout" Content="Made by Tor Alver Moen, &#169; 2024" HorizontalAlignment="Left" Margin="45,320,0,0" VerticalAlignment="Top" Width="200" FontFamily="Roboto" />
-        <Label x:Name="labelVersion" Content="[version]" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="20,320,0,0" Width="80" FontFamily="Roboto"/>
+        <Label x:Name="labelVersion" Content="[version]" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="600,320,0,0" Width="80" FontFamily="Roboto"/>
     </Grid>
 </Window>

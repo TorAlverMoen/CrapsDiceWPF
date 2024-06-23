@@ -22,6 +22,9 @@ namespace Crap
             Loaded += Window_Loaded;
         }
 
+        const string WIN_TEXT = "You win!";
+        const string LOSE_TEXT = "You lose!";
+        const string SNAKEEYES_TEXT = "Snake eyes! ";
         int DiceOne = 0;
         int DiceTwo = 0;
         int CurrentDiceSum = 0;
@@ -99,17 +102,17 @@ namespace Crap
             if ((CurrentDiceSum == 7) || (CurrentDiceSum == 11))
             {
                 DisplayPoints();
-                label.Content = "You win!";
+                label.Content = WIN_TEXT;
                 SetRollButtonState(false);
             }
             if (CurrentDiceSum == 2)
             {
-                label.Content = "You got snake eyes";
-            }
+                label.Content = SNAKEEYES_TEXT + LOSE_TEXT;
                 SetRollButtonState(false);
+        }
             if ((CurrentDiceSum == 3) || (CurrentDiceSum == 12))
             {
-                label.Content = "You lose!";
+                label.Content = LOSE_TEXT;
                 SetRollButtonState(false);
             }
         }
@@ -129,12 +132,12 @@ namespace Crap
                 if (PreviousDiceSum == CurrentDiceSum)
                 {
                     DisplayPoints();
-                    label.Content = "You win!";
+                    label.Content = WIN_TEXT;
                     SetRollButtonState(false);
                 }
                 if (CurrentDiceSum == 7)
                 {
-                    label.Content = "You lose!";
+                    label.Content = LOSE_TEXT;
                     SetRollButtonState(false);
                 }
             }
