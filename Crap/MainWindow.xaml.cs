@@ -1,3 +1,4 @@
+﻿using System.Reflection;
 using System.Windows;
 using System.Windows.Media.Imaging;
 
@@ -29,6 +30,7 @@ namespace Crap
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            labelVersion.Content = "v" + Assembly.GetExecutingAssembly().GetName().Version;
             NewGame();
         }
 
