@@ -4,8 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Crap" mc:Ignorable="d" Background="DimGray" Foreground="LightGray"
-        Title="MainWindow" Height="400" Width="708" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+        Title="MainWindow" Height="400" Width="708" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Icon="/3D_Dice_Icon.png">
     <Grid>
+        <Image x:Name="___img_3D_Dice_png" Margin="0,0,0,0" Source="/img/3D_Dice.png" Opacity="0.1" Stretch="Fill"/>
         <Rectangle HorizontalAlignment="Left" Height="200" Margin="40,30,0,0" Stroke="LightGray" VerticalAlignment="Top" Width="260"/>
         <Image x:Name="DiceOneImg" HorizontalAlignment="Left" Height="100" Margin="60,55,0,0" VerticalAlignment="Top" Width="100" Source="/img/1.png"/>
         <Image x:Name="DiceTwoImg" HorizontalAlignment="Left" Height="100" Margin="180,55,0,0" VerticalAlignment="Top" Width="100" Source="/img/1.png"/>
@@ -19,7 +20,7 @@
         <Button x:Name="btnHowToPlay" Content="How to play" HorizontalAlignment="Left" Margin="530,55,0,0" VerticalAlignment="Top" Height="30" Width="110" FontFamily="Roboto" FontSize="14" Click="btnHowToPlay_Click"/>
         <Button x:Name="btnNewGame" Content="New game" HorizontalAlignment="Left" Margin="530,115,0,0" VerticalAlignment="Top" Height="30" Width="110" FontFamily="Roboto" FontSize="14" Click="btnNewGame_Click"/>
         <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="530,175,0,0" VerticalAlignment="Top" Height="30" Width="110" FontFamily="Roboto" FontSize="14" Click="btnExit_Click"/>
-        <GroupBox x:Name="groupBox" Header="Game status information" Margin="40,250,0,0" Width="620" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" BorderThickness="0.42" BorderBrush="LightGray">
+        <GroupBox x:Name="groupBox" Header="Game information" Margin="40,250,0,0" Width="620" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" BorderThickness="0.42" BorderBrush="LightGray">
             <Label x:Name="label" Content="[info]" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Top" Width="600" FontFamily="Roboto" HorizontalContentAlignment="Left" Foreground="LightGray"/>
         </GroupBox>
         <Label x:Name="labelAbout" Content="Made by Tor Alver Moen, &#169; 2024" HorizontalAlignment="Left" Margin="45,320,0,0" VerticalAlignment="Top" Width="200" FontFamily="Roboto" />
