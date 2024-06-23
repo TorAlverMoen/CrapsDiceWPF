@@ -25,6 +25,7 @@ namespace Crap
         const string WIN_TEXT = "You win!";
         const string LOSE_TEXT = "You lose!";
         const string SNAKEEYES_TEXT = "Snake eyes! ";
+        string ImagePath = "";
         int DiceOne = 0;
         int DiceTwo = 0;
         int CurrentDiceSum = 0;
@@ -32,6 +33,7 @@ namespace Crap
         int Turn = 0;
         int Points = 0;
         bool bIsFirstTurn = true;
+        bool bSnakeEyes = false;
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
@@ -44,6 +46,7 @@ namespace Crap
             DiceOne = DiceTwo = 0;
             CurrentDiceSum = PreviousDiceSum = 0;
             bIsFirstTurn = true;
+            bSnakeEyes = false;
             SetDiceImage(0, 1);
             SetDiceImage(0, 2);
             Turn = 0;
@@ -58,6 +61,9 @@ namespace Crap
             Random diceRoll = new Random();
             DiceOne = diceRoll.Next(1, 7);
             DiceTwo = diceRoll.Next(1, 7);
+            if (DiceOne == 1 && DiceTwo == 1) {
+                bSnakeEyes = true;
+            }
             SetDiceImage(DiceOne, 1);
             SetDiceImage(DiceTwo, 2);
             CurrentDiceSum = DiceOne + DiceTwo;
@@ -85,15 +91,23 @@ namespace Crap
             {
                 number = 0;
             }
-            string imagePath = $"pack://application:,,,/img/{number}.png";
+
+            if (bSnakeEyes)
+            {
+                ImagePath = $"pack://application:,,,/img/1_snake_eye.png";
+            }
+            else
+            {
+                ImagePath = $"pack://application:,,,/img/{number}.png";
+            }
 
             if (DiceId == 1)
             {
-                DiceOneImg.Source = new BitmapImage(new Uri(imagePath));
+                DiceOneImg.Source = new BitmapImage(new Uri(ImagePath));
             }
             if (DiceId == 2)
             {
-                DiceTwoImg.Source = new BitmapImage(new Uri(imagePath));
+                DiceTwoImg.Source = new BitmapImage(new Uri(ImagePath));
             }
         }
 
