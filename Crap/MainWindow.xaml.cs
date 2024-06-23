@@ -47,6 +47,7 @@ namespace Crap
             Points = 0;
             DisplayTurns();
             DisplayPoints();
+            SetRollButtonState(true);
         }
 
         private void DoDiceRoll()
@@ -58,6 +59,11 @@ namespace Crap
             SetDiceImage(DiceTwo, 2);
             CurrentDiceSum = DiceOne + DiceTwo;
             Points = Points + CurrentDiceSum;
+        }
+
+        private void SetRollButtonState(bool inState)
+        {
+            btnRoll.IsEnabled = inState;
         }
 
         private void DisplayTurns()
@@ -94,14 +100,17 @@ namespace Crap
             {
                 DisplayPoints();
                 label.Content = "You win!";
+                SetRollButtonState(false);
             }
             if (CurrentDiceSum == 2)
             {
                 label.Content = "You got snake eyes";
             }
+                SetRollButtonState(false);
             if ((CurrentDiceSum == 3) || (CurrentDiceSum == 12))
             {
                 label.Content = "You lose!";
+                SetRollButtonState(false);
             }
         }
 
@@ -121,10 +130,12 @@ namespace Crap
                 {
                     DisplayPoints();
                     label.Content = "You win!";
+                    SetRollButtonState(false);
                 }
                 if (CurrentDiceSum == 7)
                 {
                     label.Content = "You lose!";
+                    SetRollButtonState(false);
                 }
             }
             DisplayPoints();
