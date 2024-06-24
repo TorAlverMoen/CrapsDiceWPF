@@ -16,6 +16,7 @@
     <None Remove="1_snake_eye.png" />
     <None Remove="2.png" />
     <None Remove="3.png" />
+    <None Remove="3D_Dice_Icon.ico" />
     <None Remove="3D_Dice_Icon.png" />
     <None Remove="4.png" />
     <None Remove="5.png" />
@@ -25,14 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="C:\Users\toral\Desktop\Crap\3D\3D_Dice_Icon.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="3D_Dice_Icon.png" />
+    <Resource Include="3D_Dice_Icon.ico" />
     <Resource Include="img\0.png" />
     <Resource Include="img\1.png" />
     <Resource Include="img\1_snake_eye.png" />
