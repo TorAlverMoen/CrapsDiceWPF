@@ -12,7 +12,7 @@
         <Image x:Name="DiceTwoImg" HorizontalAlignment="Left" Height="100" Margin="180,55,0,0" VerticalAlignment="Top" Width="100" Source="/img/1.png"/>
         <Button x:Name="btnRoll" Content="Roll dice" HorizontalAlignment="Left" Margin="111,175,0,0" VerticalAlignment="Top" Height="35" Width="120" FontFamily="Roboto" FontSize="16" Click="btnRoll_Click"/>
         <Rectangle HorizontalAlignment="Left" Height="200" Margin="335,30,0,0" Stroke="LightGray" VerticalAlignment="Top" Width="140"/>
-        <Label x:Name="LabelTurns" Content="Turns" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="355,65,0,0" VerticalAlignment="Top" FontSize="14" Foreground="LightGray" Background="#444444" Width="100"/>
+        <Label x:Name="LabelTurns" Content="Round" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="355,65,0,0" VerticalAlignment="Top" FontSize="14" Foreground="LightGray" Background="#444444" Width="100"/>
         <Label x:Name="LabelTurnsDisplay" Content="0" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="355,95,0,0" VerticalAlignment="Top" FontSize="14" Foreground="LightGray" Width="100"/>
         <Label x:Name="LabelPoints" Content="Points" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="355,140,0,0" VerticalAlignment="Top" FontSize="14" Foreground="LightGray" Background="#444444" Width="100"/>
         <Label x:Name="LabelPointsDisplay" Content="0" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="355,170,0,0" VerticalAlignment="Top" FontSize="14" Foreground="LightGray" Width="100"/>
