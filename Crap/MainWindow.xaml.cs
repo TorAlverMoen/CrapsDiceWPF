@@ -64,6 +64,12 @@ namespace Crap
             Points = Points + CurrentDiceSum;
         }
 
+        private void ShowAboutBox()
+        {
+            AboutBox aboutBox = new AboutBox();
+            aboutBox.Show();
+        }
+
         private void SetRollButtonState(bool inState)
         {
             btnRoll.IsEnabled = inState;
@@ -157,6 +163,11 @@ namespace Crap
         {
             DoDiceRoll();
             GameLoop();
+        }
+
+        private void btnAbout_Click(object sender, RoutedEventArgs e)
+        {
+            ShowAboutBox();
         }
 
         private void btnHowToPlay_Click(object sender, RoutedEventArgs e)
