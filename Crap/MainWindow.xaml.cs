@@ -70,6 +70,12 @@ namespace Crap
             aboutBox.Show();
         }
 
+        private void ShowHowToPlay()
+        {
+            HowToPlay rulesWindow = new HowToPlay();
+            rulesWindow.Show();
+        }
+
         private void SetRollButtonState(bool inState)
         {
             btnRoll.IsEnabled = inState;
@@ -172,7 +178,7 @@ namespace Crap
 
         private void btnHowToPlay_Click(object sender, RoutedEventArgs e)
         {
-
+            ShowHowToPlay();
         }
 
         private void btnNewGame_Click(object sender, RoutedEventArgs e)

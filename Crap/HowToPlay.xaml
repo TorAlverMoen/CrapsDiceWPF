@@ -1,0 +1,22 @@
+﻿<Window x:Class="Crap.HowToPlay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Crap"
+        mc:Ignorable="d"
+        Title="How to play 'Crap'" Height="420" Width="580" Background="#444444" Foreground="LightGray" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Height="400" Width="580">
+        <TextBlock Text="How to play 'Crap'" FontSize="20" FontFamily="Roboto" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="30"/>
+        <TextBlock Text="'Crap' is a simplified version of the casino dice game Craps" FontSize="15" FontFamily="Roboto" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,80,0,0"/>
+        <TextBlock Text="The rules for the first turn:" FontSize="15" FontFamily="Roboto" FontWeight="Bold" Margin="30,120,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <TextBlock Text=" * If you roll 7 or 11 you win" FontSize="14" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,150,0,0"/>
+        <TextBlock Text=" * If you roll 2 (Snake Eyes), 3 or 12 you lose" FontSize="14" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,170,0,0"/>
+        <TextBlock Text=" * All other rolls will be added to the points and you will progress to the next round" FontSize="14" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,190,0,0"/>
+        <TextBlock Text="The rules for all subsequent turns:" FontSize="15" FontFamily="Roboto" FontWeight="Bold" Margin="30,220,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <TextBlock Text=" * If you roll the same sum as the previous round you win" FontSize="14" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,250,0,0"/>
+        <TextBlock Text=" * If you roll 7 you lose" FontSize="14" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,270,0,0"/>
+        <TextBlock Text=" * All other rolls will be added to the points and you will progress to the next round" FontSize="14" FontFamily="Roboto" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,290,0,0"/>
+        <Button x:Name="btnCloseHowTo" Content="Close" FontFamily="Roboto" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,330,0,0" Height="30" Width="80" Click="btnCloseHowTo_Click"/>
+    </Grid>
+</Window>
