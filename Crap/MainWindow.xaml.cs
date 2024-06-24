@@ -139,6 +139,22 @@ namespace Crap
             }
         }
 
+        private void CheckTurns()
+        {
+            label.Content = ROLL_TEXT + CurrentDiceSum.ToString();
+            if (PreviousDiceSum == CurrentDiceSum)
+            {
+                DisplayPoints();
+                label.Content = WIN_TEXT;
+                SetRollButtonState(false);
+            }
+            if (CurrentDiceSum == 7)
+            {
+                label.Content = LOSE_TEXT;
+                SetRollButtonState(false);
+            }
+        }
+
         private void GameLoop()
         {
             Turn++;
@@ -151,18 +167,7 @@ namespace Crap
             }
             else
             {
-                label.Content = ROLL_TEXT + CurrentDiceSum.ToString();
-                if (PreviousDiceSum == CurrentDiceSum)
-                {
-                    DisplayPoints();
-                    label.Content = WIN_TEXT;
-                    SetRollButtonState(false);
-                }
-                if (CurrentDiceSum == 7)
-                {
-                    label.Content = LOSE_TEXT;
-                    SetRollButtonState(false);
-                }
+                CheckTurns();
             }
             DisplayPoints();
             PreviousDiceSum = CurrentDiceSum;
