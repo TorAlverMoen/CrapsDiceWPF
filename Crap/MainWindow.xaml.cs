@@ -55,7 +55,7 @@ namespace Crap
             Random diceRoll = new Random();
             DiceOne = diceRoll.Next(1, 7);
             DiceTwo = diceRoll.Next(1, 7);
-            if (DiceOne == 1 && DiceTwo == 1) {
+            if (DiceOne == 1 && DiceTwo == 1 && bIsFirstTurn) {
                 bSnakeEyes = true;
             }
             SetDiceImage(DiceOne, 1);
