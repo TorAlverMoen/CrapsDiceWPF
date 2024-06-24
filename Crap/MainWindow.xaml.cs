@@ -86,13 +86,13 @@ namespace Crap
                 number = 0;
             }
 
-            if (bSnakeEyes)
+            if (!bSnakeEyes)
             {
-                ImagePath = $"pack://application:,,,/img/1_snake_eye.png";
+                ImagePath = $"pack://application:,,,/img/{number}.png";
             }
             else
             {
-                ImagePath = $"pack://application:,,,/img/{number}.png";
+                ImagePath = $"pack://application:,,,/img/1_snake_eye.png";
             }
 
             if (DiceId == 1)
