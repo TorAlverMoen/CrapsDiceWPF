@@ -10,19 +10,19 @@
         <Rectangle HorizontalAlignment="Left" Height="200" Margin="40,30,0,0" Stroke="LightGray" VerticalAlignment="Top" Width="260"/>
         <Image x:Name="DiceOneImg" HorizontalAlignment="Left" Height="100" Margin="60,55,0,0" VerticalAlignment="Top" Width="100" Source="/img/1.png"/>
         <Image x:Name="DiceTwoImg" HorizontalAlignment="Left" Height="100" Margin="180,55,0,0" VerticalAlignment="Top" Width="100" Source="/img/1.png"/>
-        <Button x:Name="btnRoll" Content="Roll dice" HorizontalAlignment="Left" Margin="60,175,0,0" VerticalAlignment="Top" Height="36" Width="100" FontFamily="Roboto" FontSize="16" Click="btnRoll_Click"/>
-        <Button x:Name="btnNewGame" Content="New game" HorizontalAlignment="Left" Margin="180,175,0,0" VerticalAlignment="Top" Height="36" Width="100" FontFamily="Roboto" FontSize="16" Click="btnNewGame_Click"/>
+        <Button x:Name="btnRoll" Content="Roll dice" HorizontalAlignment="Left" Margin="111,175,0,0" VerticalAlignment="Top" Height="35" Width="120" FontFamily="Roboto" FontSize="16" Click="btnRoll_Click"/>
         <Rectangle HorizontalAlignment="Left" Height="200" Margin="335,30,0,0" Stroke="LightGray" VerticalAlignment="Top" Width="140"/>
         <Label x:Name="LabelTurns" Content="Turns" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="355,65,0,0" VerticalAlignment="Top" FontSize="14" Foreground="LightGray" Background="#444444" Width="100"/>
         <Label x:Name="LabelTurnsDisplay" Content="0" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="355,95,0,0" VerticalAlignment="Top" FontSize="14" Foreground="LightGray" Width="100"/>
         <Label x:Name="LabelPoints" Content="Points" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="355,140,0,0" VerticalAlignment="Top" FontSize="14" Foreground="LightGray" Background="#444444" Width="100"/>
         <Label x:Name="LabelPointsDisplay" Content="0" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="355,170,0,0" VerticalAlignment="Top" FontSize="14" Foreground="LightGray" Width="100"/>
-        <Rectangle HorizontalAlignment="Left" Height="200" Margin="510,30,0,0" Stroke="LightGray" VerticalAlignment="Top" Width="150"/>
-        <Button x:Name="btnAbout" Content="About" HorizontalAlignment="Left" Margin="530,55,0,0" VerticalAlignment="Top" Height="30" Width="110" FontFamily="Roboto" FontSize="14" Click="btnAbout_Click"/>
-        <Button x:Name="btnHowToPlay" Content="How to play" HorizontalAlignment="Left" Margin="530,115,0,0" VerticalAlignment="Top" Height="30" Width="110" FontFamily="Roboto" FontSize="14" Click="btnHowToPlay_Click"/>
-        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="530,175,0,0" VerticalAlignment="Top" Height="30" Width="110" FontFamily="Roboto" FontSize="14" Click="btnExit_Click"/>
-        <GroupBox x:Name="groupBox" Header="Game information" Margin="40,250,0,0" Width="620" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" BorderThickness="0.42" BorderBrush="LightGray">
-            <Label x:Name="label" Content="[info]" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Top" Width="600" FontFamily="Roboto" HorizontalContentAlignment="Left" Foreground="LightGray"/>
+        <Rectangle HorizontalAlignment="Left" Height="270" Margin="510,30,0,0" Stroke="LightGray" VerticalAlignment="Top" Width="150"/>
+        <Button x:Name="btnAbout" Content="About" HorizontalAlignment="Left" Margin="530,60,0,0" VerticalAlignment="Top" Height="30" Width="110" FontFamily="Roboto" FontSize="14" Click="btnAbout_Click"/>
+        <Button x:Name="btnHowToPlay" Content="How to play" HorizontalAlignment="Left" Margin="530,120,0,0" VerticalAlignment="Top" Height="30" Width="110" FontFamily="Roboto" FontSize="14" Click="btnHowToPlay_Click"/>
+        <Button x:Name="btnNewGame" Content="New game" HorizontalAlignment="Left" Margin="530,180,0,0" VerticalAlignment="Top" Height="30" Width="110" FontFamily="Roboto" FontSize="14" Click="btnNewGame_Click"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="530,240,0,0" VerticalAlignment="Top" Height="30" Width="110" FontFamily="Roboto" FontSize="14" Click="btnExit_Click"/>
+        <GroupBox x:Name="groupBox" Header="Game information" Margin="40,250,0,0" Width="435" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" BorderThickness="0.42" BorderBrush="LightGray">
+            <Label x:Name="label" Content="[info]" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Top" Width="410" FontFamily="Roboto" HorizontalContentAlignment="Left" Foreground="LightGray"/>
         </GroupBox>
         <Label x:Name="labelAbout" Content="Made by Tor Alver Moen, &#169; 2024" HorizontalAlignment="Left" Margin="45,320,0,0" VerticalAlignment="Top" Width="200" FontFamily="Roboto" />
         <Label x:Name="labelVersion" Content="[version]" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="600,320,0,0" Width="80" FontFamily="Roboto"/>
