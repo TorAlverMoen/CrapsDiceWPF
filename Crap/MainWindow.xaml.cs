@@ -18,6 +18,7 @@ namespace Crap
         const string WIN_TEXT = "You win!";
         const string LOSE_TEXT = "You lose!";
         const string SNAKEEYES_TEXT = "Snake eyes! ";
+        const string ROLL_TEXT = "You rolled ";
         string ImagePath = "";
         int DiceOne = 0;
         int DiceTwo = 0;
@@ -119,6 +120,7 @@ namespace Crap
 
         private void CheckFirstTurn()
         {
+            label.Content = ROLL_TEXT + CurrentDiceSum.ToString();
             if ((CurrentDiceSum == 7) || (CurrentDiceSum == 11))
             {
                 DisplayPoints();
@@ -149,6 +151,7 @@ namespace Crap
             }
             else
             {
+                label.Content = ROLL_TEXT + CurrentDiceSum.ToString();
                 if (PreviousDiceSum == CurrentDiceSum)
                 {
                     DisplayPoints();
