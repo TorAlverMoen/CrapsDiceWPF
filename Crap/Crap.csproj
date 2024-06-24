@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
-    <AssemblyVersion>0.6.0.0</AssemblyVersion>
+    <AssemblyVersion>0.7.0.0</AssemblyVersion>
     <PackageIcon>3D_Dice_Icon.png</PackageIcon>
   </PropertyGroup>
 
@@ -21,6 +21,7 @@
     <None Remove="5.png" />
     <None Remove="6.png" />
     <None Remove="img\3D_Dice.png" />
+    <None Remove="img\CrapSplash.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,6 +42,7 @@
     <Resource Include="img\4.png" />
     <Resource Include="img\5.png" />
     <Resource Include="img\6.png" />
+    <Resource Include="img\CrapSplash.png" />
   </ItemGroup>
 
 </Project>
