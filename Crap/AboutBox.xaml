@@ -4,14 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Crap" mc:Ignorable="d" Background="#444444" Foreground="LightGray"
-        Title="AboutBox" Height="280" Width="400" WindowStartupLocation="CenterScreen">
+        Title="AboutBox" Height="280" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
-        <StackPanel>
+        <StackPanel Width="400" Height="260">
             <TextBlock Text="'Crap' (simplified version of Craps)" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="20"/>
             <Label x:Name="labelVersion" Content="[version]" HorizontalAlignment="Center" Margin="10" Foreground="LightGray"/>
             <TextBlock Text="&#169; 2024 Toramo Games" HorizontalAlignment="Center" Margin="10"/>
             <TextBlock Text="This is a simplified version of a casino dice game called Craps" HorizontalAlignment="Center" Margin="10"/>
-            <Button x:Name="btnCloseAbout" Content="OK" Width="75" Margin="10" HorizontalAlignment="Center" Click="btnCloseAbout_Click"/>
+            <Button x:Name="btnCloseAbout" Content="OK" Width="80" Height="30" Margin="10" HorizontalAlignment="Center" Click="btnCloseAbout_Click"/>
         </StackPanel>
     </Grid>
 </Window>
