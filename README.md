@@ -1,6 +1,6 @@
 ![Title Image](Crap/img/CrapSplash.png)
 
-This game is played with two dice and the rules are as follows:
+This game is a simplified version of the casino game Craps and is played with two dice and the rules are as follows:
 
 The rules for the first turn:
 * If you roll 7 or 11 you win
