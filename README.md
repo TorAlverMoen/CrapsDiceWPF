@@ -1,6 +1,3 @@
-# "Crap"
-### A simplified version of the casino game Craps
-
 ![Title Image](Crap/img/CrapSplash.png)
 
 This game is played with two dice and the rules are as follows:
@@ -19,8 +16,8 @@ The rules for all subsequent turns:
 
 This application including the graphics was made by Tor Alver Moen.
 
-It was coded in C# WPF. The 3D dice was made with Blender and rendered in Unreal Engine 5. The 2D dice was made with GIMP - GNU Image Manipulation Program
+It was coded in C# WPF. The 3D dice was made with [Blender](https://www.blender.org) and rendered in [Unreal Engine 5](https://www.unrealengine.com). The 2D dice was made with [GIMP - GNU Image Manipulation Program](https://www.gimp.org).
 
-### Screenshot:
+#### Screenshot:
 
 ![Screenshot](doc/screenshot.png)
