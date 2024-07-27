@@ -16,7 +16,7 @@ The rules for all subsequent turns:
 
 This application including the graphics was made by Tor Alver Moen.
 
-It was coded in C# WPF. The 3D dice was made with [Blender](https://www.blender.org) and rendered in [Unreal Engine 5](https://www.unrealengine.com). The 2D dice was made with [GIMP - GNU Image Manipulation Program](https://www.gimp.org).
+It was coded in C# WPF. The 3D dice was made with <a href="https://www.blender.org" target="_blank">Blender</a> and rendered in <a href="https://www.unrealengine.com" target="_blank">Unreal Engine 5</a>. The 2D dice was made with <a href="https://www.gimp.org" target="_blank">GIMP - GNU Image Manipulation Program</a>.
 
 #### Screenshot:
 
