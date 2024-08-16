@@ -11,9 +11,9 @@ namespace Crap
         {
             base.OnStartup(e);
 
-            SplashScreen splash = new SplashScreen("img/CrapSplash.png");
+            SplashScreen splash = new SplashScreen("img\\3D_2dice.png");
             splash.Show(autoClose: false);
-            Thread.Sleep(4000);
+            Thread.Sleep(3000);
             splash.Close(TimeSpan.FromMilliseconds(500));
         }
     }

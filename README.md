@@ -1,4 +1,4 @@
-![Title Image](Crap/img/CrapSplash.png)
+![Title Image](Crap/img/3D_2dice.png)
 
 This game is a simplified version of the casino game Craps and is played with two dice and the rules are as follows:
 
