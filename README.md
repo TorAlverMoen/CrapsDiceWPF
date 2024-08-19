@@ -2,15 +2,15 @@
 
 This game is a simplified version of the casino game Craps and is played with two dice and the rules are as follows:
 
-The rules for the first turn:
-* If you roll 7 or 11 you win
-* If you roll 2 (Snake Eyes), 3 or 12 you lose
-* All other rolls will be added to the points and you will continue to the next round
+Rules for the First Turn:
+* If you roll a 7 or 11, you win.
+* If you roll a 2 (Snake Eyes), 3, or 12, you lose.
+* All other rolls will be added to your points, and you will continue to the next round.
 
-The rules for all subsequent turns:
-* If you roll the same sum as the previous round you win
-* If you roll 7 you lose
-* All other rolls will be added to the points and you will continue to the next round
+Rules for All Subsequent Turns:
+* If you roll the same sum as the previous round, you win.
+* If you roll a 7, you lose.
+* All other rolls will be added to your points, and you will continue to the next round.
 
 ---
 
