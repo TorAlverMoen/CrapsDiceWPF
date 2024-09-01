@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Crap" mc:Ignorable="d" Background="DimGray" Foreground="LightGray" ResizeMode="NoResize" 
-        Title="'Crap' (simplified version of Craps)" Height="400" Width="700" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Icon="/3D_Dice_Icon.ico">
+        Title="'Crap' (simplified version of Craps)" Height="400" Width="700" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Icon="/3D_2dice_Icon.png">
     <Grid>
         <Image x:Name="_3D_Dice_background" Margin="0,0,0,0" Source="/3D_2dice_background.png" Opacity="0.2" Stretch="Fill" Width="700" Height="380"/>
         <Rectangle HorizontalAlignment="Left" Height="200" Margin="40,30,0,0" Stroke="LightGray" VerticalAlignment="Top" Width="260"/>

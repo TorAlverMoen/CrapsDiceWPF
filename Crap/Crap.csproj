@@ -6,8 +6,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <PackageIcon>3D_Dice_Icon.png</PackageIcon>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <PackageIcon>3D_2dice_Icon.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,8 +17,6 @@
     <None Remove="2.png" />
     <None Remove="3.png" />
     <None Remove="3D_2dice_background.png" />
-    <None Remove="3D_Dice_Icon.ico" />
-    <None Remove="3D_Dice_Icon.png" />
     <None Remove="4.png" />
     <None Remove="5.png" />
     <None Remove="6.png" />
@@ -26,8 +24,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\..\..\Csharp_Projects\Crap\3D\3D_2dice_Icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="3D_2dice_background.png" />
-    <Resource Include="3D_Dice_Icon.ico" />
+    <Resource Include="3D_2dice_Icon.png" />
     <Resource Include="img\0.png" />
     <Resource Include="img\1.png" />
     <Resource Include="img\1_snake_eye.png" />
@@ -37,6 +42,13 @@
     <Resource Include="img\4.png" />
     <Resource Include="img\5.png" />
     <Resource Include="img\6.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="3D_2dice_Icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
