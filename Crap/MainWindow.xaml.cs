@@ -28,16 +28,17 @@ namespace Crap
         int Points = 0;
         bool bIsFirstTurn = true;
         bool bSnakeEyes = false;
+        string appVersion = "v" + Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "-----";
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            labelVersion.Content = "v" + Assembly.GetExecutingAssembly().GetName().Version;
+            labelVersion.Content = appVersion;
             NewGame();
         }
 
         private void NewGame()
         {
-            label.Content = "";
+            label.Content = "Welcome to \"Crap\" (Simplified version of Craps) " + appVersion + " by Tor Alver Moen";
             DiceOne = DiceTwo = 0;
             CurrentDiceSum = PreviousDiceSum = 0;
             bIsFirstTurn = true;
