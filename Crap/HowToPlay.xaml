@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Crap"
         mc:Ignorable="d"
-        Title="How to play 'Crap'" Height="420" Width="580" Background="#444444" Foreground="LightGray" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="How to play 'Crap'" Height="420" Width="580" Background="#444444" Foreground="LightGray" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/3D_2dice_Icon.png">
     <Grid Height="400" Width="580">
         <TextBlock Text="How to play 'Crap'" FontSize="20" FontFamily="Roboto" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="30"/>
         <TextBlock Text="'Crap' is a simplified version of the casino dice game Craps" FontSize="15" FontFamily="Roboto" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,80,0,0"/>

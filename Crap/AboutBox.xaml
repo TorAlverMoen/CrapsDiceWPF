@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Crap" mc:Ignorable="d" Background="#444444" Foreground="LightGray"
-        Title="AboutBox" Height="280" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="AboutBox" Height="280" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="/3D_2dice_Icon.png">
     <Grid>
         <StackPanel Width="400" Height="260">
             <TextBlock Text="'Crap' (simplified version of Craps)" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="20"/>
